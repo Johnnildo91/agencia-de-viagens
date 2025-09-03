@@ -21,31 +21,122 @@
                     <img src="" alt="logo da empresa">
                     <h2>Solicite um orçamento</h2>
                 </div>
-                <div class="dados-formulario">
+                <div class="titulo-formulario">
                     <h3>Informe seu dados</h3>
                 <form  method="post" action="">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Email para contato" required>
-
-                    <label for="celular">Celular:</label>
-                    <input type="tel" id="celular" name="celular" placeholder="(xx)xxxxxxxxx" required>
-                <div class="data-viagem">   
-                    <div class="data-da-ida">
-                    <label for="data-ida">Data da ida:</label>
-                    <input type="date" id="data-ida" name="data-ida" required>
-                    </div> 
-                    <div class="data-da-volta">
-                    <label for="data-volta">Data da Volta:</label>
-                    <input type="date" id="data-volta" name="data-volta" required>
-                    </div>
-                </div>
-                    <label for="mensagem">Mensagem:</label>
-                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
-
-                    <button type="submit">Enviar</button>
+                        <div>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="Email para contato" required>
+                            <label for="celular">Celular:</label>
+                            <input type="tel" id="celular" name="celular" placeholder="(xx)xxxxxxxxx" required>
+                        </div>
+                        <div class="data-da-ida">
+                            <label for="data-ida">Data da ida:</label>
+                            <input type="date" id="data-ida" name="data-ida" required>
+                        </div> 
+                        <div class="data-da-volta">
+                            <label for="data-volta">Data da Volta:</label>
+                            <input type="date" id="data-volta" name="data-volta" required>
+                        </div>
+                        <div>
+                            <label>Origem</label>
+                            <select name="estado-origem" id="origem" required>
+                                <option value="">Partindo de:</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <label>Destino</label>
+                            <select name="estado-destino" id="destino" required>
+                                <option value="">Indo para</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                        <h2>Quarto com cama infantil?</h2>
+                        <div>
+                            <div>
+                                <input type="radio" id="cama-infantil-sim" name="cama-infantil" value="sim" required>
+                                <label for="cama-infantil-sim">Sim</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="cama-infantil-nao" name="cama-infantil" value="nao" required>
+                                <label for="cama-infantil-nao">Não</label>
+                            </div>
+                        </div>
+                        <h2>Preferências de hospedagem</h2>
+                        <div>
+                            <div>
+                                <input type="checkbox" id="checbox-piscina" name="hospedagem[]" value="piscina">
+                                <label for="checbox-piscina">Piscina</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox-wifi" name="hospedagem[]" value="wifi">
+                                <label for="checkbox-wifi">Wi-Fi</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox-garagem" name="hospedagem[]" value="garagem">
+                                <label for="checkbox-garagem">Garagem</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox-suite" name="hospedagem[]" value="suite">
+                                <label for="checkbox-suite">Suíte</label>
+                            </div>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
                 </form>
             </div>
         </section>
