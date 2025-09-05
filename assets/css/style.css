@@ -3,3 +3,91 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #80808029;
+    font-family: "Raleway", sans-serif;
+}
+.limiter{
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+.cabecalho{
+    background-color: #fff;
+    height: 55px;  
+}
+.cabecalho, .container-header, .header-formulario, .formulario, .datas, .localidades, .partida, .chegada, .origem, .destino{
+    width: 100%;
+}
+.container-header, .header-formulario{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-logo{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+h1{
+    font-size: 24px;
+    color: #5d15d1;
+}
+.formulario{
+    height: auto;
+    background-image: url(/assets/image/bahia.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-formulario{
+    padding: 50px 0 50px 0;
+}
+.header-formulario{
+    background-color: #5d15d1;
+    height: 35px;
+}
+.header-formulario img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    rotate: -45deg;
+}
+.header-formulario h2{
+    font-size: 14px;
+    color: #fff;
+}
+.body-formulario{
+    background-color: #fff;
+    padding: 30px 25px 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+.titulo-formulario{
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+label{
+    font-size: 16px;
+    display: block;
+}
+input, select{
+    width: 100%;
+    height: 32px;
+    padding: 0 5px 0 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+.datas, .localidades, .cama-infantil, .preferencias, .opcao-cama{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.opcao-cama{
+    width: 120px;
+}
+.opcao-cama input{
+    width: 15px;
+}
