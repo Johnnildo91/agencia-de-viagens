@@ -2,8 +2,8 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets\image\aviao.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
     <title>Agencia de Viagens</title>
@@ -22,16 +22,16 @@
             <div class="limiter container-formulario">
                 <div class="header-formulario">
                     <img src="assets\image\aviao.png" alt="avião">
-                    <h2>Solicite um orçamento</h2>
+                    <h3 class="header-formulario-titulo">Solicite um orçamento</h3>
                 </div>
                 <div class="body-formulario">
-                    <h3 class="titulo-formulario">Informe seu dados</h3>
+                    <h2 class="titulo-formulario">Informe seu dados</h2>
                     <form  method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
                         <div>
                             <label for="nome">Nome:</label>
                             <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Email para contato" required>
+                            <input type="email" id="email" name="email" placeholder="Email para contato" autocomplete="email" required>
                             <label for="celular">Celular:</label>
                             <input type="tel" id="celular" name="celular" placeholder="(xx)xxxxxxxxx" required>
                         </div>
@@ -47,8 +47,8 @@
                         </div>
                         <div class="localidades">
                             <div class="origem">
-                                <label>Origem</label>
-                                <select name="origem" required>
+                                <label for="origem">Origem:</label>
+                                <select name="origem" id="origem" required>
                                     <option value="">Partindo de:</option>
                                     <option value="Acre">Acre</option>
                                     <option value="Alagoas">Alagoas</option>
@@ -80,8 +80,8 @@
                                 </select>
                             </div>
                             <div class="destino">
-                                <label>Destino</label>
-                                <select name="destino" required>
+                                <label for="destino">Destino</label>
+                                <select name="destino"  id="destino" required>
                                     <option value="">Indo para</option>
                                     <option value="Acre">Acre</option>
                                     <option value="Alagoas">Alagoas</option>
@@ -113,7 +113,7 @@
                                 </select>
                             </div> 
                         </div>
-                        <h2>Quarto com cama infantil?</h2>
+                        <h3 class="cama-infantil-titulo">Quarto com cama infantil?</h3>
                         <div class="cama-infantil">
                             <div  class="opcao-cama">
                                 <input type="radio" name="infantil" value="sim" id="cama-infantil-sim">
@@ -124,21 +124,21 @@
                                 <label for="cama-infantil-nao">Não</label>
                             </div>
                         </div>
-                        <h2>Preferências de hospedagem</h2>
+                        <h3 class="preferncias-titulo">Preferências de hospedagem</h3>
                         <div class="preferencias">
-                            <div>
+                            <div class="opcao-preferencia">
                                 <input type="checkbox" id="checbox-piscina" name="preferencias[]" value="piscina">
                                 <label for="checbox-piscina">Piscina</label>
                             </div>
-                            <div>
+                            <div class="opcao-preferencia">
                                 <input type="checkbox" id="checkbox-wifi" name="preferencias[]" value="wifi">
-                                <label for="checkbox-wifi">Wi-Fi</label>
+                                <label for="checkbox-wifi">WiFi</label>
                             </div>
-                            <div>
+                            <div class="opcao-preferencia">
                                 <input type="checkbox" id="checkbox-garagem" name="preferencias[]" value="garagem">
                                 <label for="checkbox-garagem">Garagem</label>
                             </div>
-                            <div>
+                            <div class="opcao-preferencia">
                                 <input type="checkbox" id="checkbox-suite" name="preferencias[]" value="suite">
                                 <label for="checkbox-suite">Suíte</label>
                             </div>
@@ -148,11 +148,11 @@
                 </div>
             </div>
         </section>
-        <section class="ofertas">
+        <section class="secao-ofertas">
             <div class="limiter">
                 <h2>Ofertas</h2>
                 <h3>Com até <strong>50%</strong> de desconto.</h3>
-                <div class="grid-pacotes">
+                <div class="flex-pacotes">
                     <div class="card-rio-destaque">
                         <img src="assets\image\rio.jpg" alt="Rio de Janeiro">
                         <h3>Rio de Janeiro</h3>

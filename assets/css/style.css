@@ -3,15 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* estilos globais*/
 body{
     background-color: #80808029;
     font-family: "Raleway", sans-serif;
 }
+h1{
+    font-size: 24px;
+    color: #5d15d1;
+}
+label{
+    font-size: 16px;
+    display: block;
+}
+input, select{
+    width: 100%;
+    height: 32px;
+    padding: 0 5px 0 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+}
+button{
+    width: 160px;
+    height: 32px;
+    background-color: #5d15d1;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+img{
+    width: 100%;
+}
+h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+h3{
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
 .limiter{
+    width: 100%;
     max-width: 1024px;
     height: 100%;
     margin: 0 auto;
 }
+/*estilos do cabeçalho*/
 .cabecalho{
     background-color: #fff;
     height: 55px;  
@@ -30,10 +72,7 @@ body{
     height: 32px;
     margin-right: 10px;
 }
-h1{
-    font-size: 24px;
-    color: #5d15d1;
-}
+/*estilos do formuário*/
 .formulario{
     height: auto;
     background-image: url(/assets/image/bahia.jpg);
@@ -63,31 +102,43 @@ h1{
     display: flex;
     flex-direction: column;
 }
-.titulo-formulario{
-    font-size: 22px;
-    margin-bottom: 24px;
+.header-formulario-titulo{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0px;
 }
-label{
-    font-size: 16px;
-    display: block;
+.preferncias-titulo, .cama-infantil-titulo{
+    font-weight: 600;
 }
-input, select{
-    width: 100%;
-    height: 32px;
-    padding: 0 5px 0 5px;
-    border-radius: 4px;
-    font-size: 14px;
-    margin: 10px 0 10px 0;
-}
-.datas, .localidades, .cama-infantil, .preferencias, .opcao-cama{
+.datas, .localidades, .cama-infantil, .preferencias, .opcao-cama, .opcao-preferencia{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
 }
-.opcao-cama{
+.opcao-cama, .opcao-preferencia{
     width: 120px;
 }
-.opcao-cama input{
+.opcao-cama input, .opcao-preferencia input{
     width: 15px;
+}
+/*estilos da seção ofertas*/
+.secao-ofertas{
+    margin: 32px auto 0px auto;
+}
+.flex-pacotes, .card-imagens{
+    display: flex;
+}
+.flex-pacotes{
+    width: 100%;
+    height: 375px;
+    gap: 20px;  
+}
+.card-imagens{
+    gap: 10px;
+}
+.flex-pacotes img, .card-imagens img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
