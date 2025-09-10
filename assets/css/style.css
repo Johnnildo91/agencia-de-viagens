@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 /* estilos globais*/
 body{
@@ -119,11 +120,13 @@ h3{
 }
 /*estilos da seção ofertas*/
 .secao-ofertas, .secao-anuncios, .rodape{
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: auto;
     margin: 32px auto 0px auto;
+}
+.secao-ofertas, .secao-anuncios{
+    display: flex;
+    flex-direction: column;
 }
 .flex-pacotes, .flex-anuncios{
     display: flex;
@@ -151,15 +154,12 @@ h3{
     height: 100%;
     gap: 10px;
 }
-.card-pacote{
+.card-pacote, .card-anuncio{
     position: relative;
     width: calc(50% - 10px);
-    height: calc(50% - 10px);
 }
-.card-anuncio{
-    position: relative;
-    width: calc(50% - 10px);
-    height: 100%;
+.card-pacote{
+    height: calc(50% - 10px);
 }
 .card-pacote h3, .card-rio-destaque h3{
     position: absolute;
@@ -171,15 +171,49 @@ h3{
     font-size: 17px;
     padding: 5px 10px 5px 10px;
 }
+/*estilos da seção anúncios*/
+.card-anuncio{
+    height: 100%;
+}
+.descricao-anuncio{
+    background-color: #fff;
+    padding: 20px;
+}
 .card-anuncio h3{
     width: 100%;
     font-size: 16px;
     font-weight: bold;
-    padding: 20px;
-    background-color: #fff;
 }
-.card-anuncio h4{
+.card-anuncio p{
     color: gray;
-    margin-top: 15px;
-    background-color: #fff;
+    margin-top: 15px; 
+}
+/*estilos do rodapé*/
+.rodape{
+    background-color: #5d15d1;
+    height: auto;
+}
+.flex-rodape{
+    display: flex;
+    justify-content: space-between;
+}
+.lista-contatos, .redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0 15px 0;
+}
+.contatos h2, .redes-sociais h2{
+    color: #fff;
+    margin-bottom: 15px;
+}
+.iten-contato, .iten-rede-social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    margin: 5px 0 5px 0;
+}
+.iten-contato img, .iten-rede-social img{
+    width: 18px;
 }
