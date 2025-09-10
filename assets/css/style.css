@@ -174,10 +174,12 @@ h3{
 .card-anuncio h3{
     width: 100%;
     font-size: 16px;
+    font-weight: bold;
     padding: 20px;
     background-color: #fff;
 }
-.card-anuncio p{
+.card-anuncio h4{
     color: gray;
     margin-top: 15px;
+    background-color: #fff;
 }
