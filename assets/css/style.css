@@ -16,6 +16,7 @@ h1{
 label{
     font-size: 16px;
     display: block;
+    font-weight: 600;
 }
 input, select{
     width: 100%;
@@ -62,6 +63,10 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container-header{
+    height: 55px;
+    justify-content: flex-start;
 }
 .img-logo{
     width: 32px;
@@ -132,8 +137,10 @@ h3{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 375px;
     gap: 20px;
+}
+.flex-pacotes{
+    height: 375px;
 }
 .card-rio-destaque{
     position: relative;
@@ -190,30 +197,80 @@ h3{
 }
 /*estilos do rodapé*/
 .rodape{
+    color: #fff;
+    height: 100%;
     background-color: #5d15d1;
-    height: auto;
 }
-.flex-rodape{
+.flex-contatos{
     display: flex;
     justify-content: space-between;
 }
-.lista-contatos, .redes-sociais{
+.contatos, .redes-sociais{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     margin: 15px 0 15px 0;
 }
 .contatos h2, .redes-sociais h2{
-    color: #fff;
     margin-bottom: 15px;
 }
 .iten-contato, .iten-rede-social{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #fff;
     margin: 5px 0 5px 0;
 }
 .iten-contato img, .iten-rede-social img{
     width: 18px;
+}
+span{
+    font-size: 14px;
+}
+/* Responsividade*/
+@media (max-width: 1100px){
+    .limiter{
+        width: 90%;
+    }
+    
+}
+@media (max-width: 768px){
+    button{
+        width: 100%;
+    }
+    .flex-pacotes, .flex-anuncios, .flex-contatos{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .card-imagens{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card-rio-destaque, .card-pacote{
+        width: 100%;
+    }
+    .card-rio-destaque img,.card-pacote img{   
+    object-fit: cover;
+    height: 225px;
+    margin-top: 15px;
+    }
+    .card-anuncio{
+        margin-top: 15px;
+        width: 100%;
+    }
+    .flex-contatos{
+        align-items: center;
+    }
+    .contatos,.redes-sociais{
+        width: 250px;
+    }
+    @media (max-width: 540px){
+        .datas, .localidades, .cama-infantil, .preferencias{
+            display: flex;
+            flex-direction: column;
+        }
+        .cama-infantil, .preferencias{
+            align-items: flex-start;
+        }
+    }
 }
